@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the sign-in container vertically and horizontally */
+.SUcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the sign-in card */
+.SUcard {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Style the sign-in form */
+.SUh3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputBox span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #888;
+    font-size: 16px;
+    transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+}
+
+.inputBox input:focus + span,
+.inputBox input:valid + span {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+/* Style the Sign In button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the error message */
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+/* Style the sign-up link */
+.SUlink {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.SUlink a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.SUlink a:hover {
+    text-decoration: underline;
+}
